@@ -1,0 +1,386 @@
+  /* ============================================================
+    ITERAGROW — BRAND DESIGN TOKENS
+    Versión: 1.0 | 2025
+    Uso: Importar este archivo ANTES de cualquier otro CSS.
+    Import: @import './iteragrow-tokens.css';
+    ============================================================ */
+
+:root {
+
+  /* ── FONDOS ─────────────────────────────────────────────── */
+  --ig-bg-primary:      #060A10;   /* Fondo principal (negro profundo) */
+  --ig-bg-panel:        #0C1219;   /* Cards y paneles */
+  --ig-bg-panel-mid:    #0F1820;   /* Secciones secundarias */
+  --ig-bg-neon-tint:    #001F14;   /* Badges, tags con tinte neon */
+  --ig-bg-light:        #F4F7F5;   /* Fondo claro (modo light) */
+  --ig-bg-white:        #FFFFFF;   /* Blanco puro */
+
+  /* ── BORDES ─────────────────────────────────────────────── */
+  --ig-border-default:  #1A2D3D;   /* Bordes generales */
+  --ig-border-subtle:   #0F1820;   /* Separadores sutiles */
+  --ig-border-neon:     #00AA72;   /* Bordes con acento neon (cards neon-tint) */
+  --ig-border-featured: #00E5A0;   /* Borde de card destacada */
+
+  /* ── ACENTOS — COLORES DE ACCIÓN ────────────────────────── */
+
+    /* PRIMARIO: Neon verde brillante
+      → Botones CTA principales
+      → Bordes activos / hover
+      → Top-bar en cards destacadas
+      → Íconos activos
+      → Labels de métricas clave
+      → Indicadores de progreso
+      USO EN: fondos oscuros únicamente */
+    --ig-accent-neon:     #00E5A0;
+
+    /* SECUNDARIO: Verde medio
+      → Botones CTA en fondos claros
+      → Check icons en listas
+      → Hover states sobre fondos claros
+      → Color de "Grow" en wordmark sobre blanco */
+    --ig-accent-green:    #00AA72;
+
+    /* TERCIARIO: Verde bosque
+      → Taglines sobre fondo gris claro
+      → Acentos subdued en light mode */
+    --ig-accent-forest:   #009060;
+
+    /* MUSGO: Verde apagado
+      → Taglines en footer
+      → Labels sobre neon-tint background
+      → Texto de soporte en dark mode */
+    --ig-accent-moss:     #3D7A62;
+
+    /* CYAN: Acento secundario azul-verde
+      → Categoría Data & BI
+      → Metric cards alternativas
+      → Highlights secundarios */
+    --ig-accent-cyan:     #0ABFB8;
+
+    /* AMBER: Acento terciario cálido
+      → Categoría CRO únicamente
+      → Tags de advertencia
+      NO usar como color de botón */
+    --ig-accent-amber:    #FFB830;
+
+    /* ── TEXTO ──────────────────────────────────────────────── */
+    --ig-text-primary:    #FFFFFF;   /* Texto principal sobre fondos oscuros */
+    --ig-text-secondary:  #E2E8F0;   /* Subtítulos, títulos de cards */
+    --ig-text-muted:      #7E97B4;   /* Cuerpo, descripciones, subtítulos */
+    --ig-text-dim:        #7088A0;   /* Captions, metadata, estados deshabilitados (Ajustado para contraste AA) */
+    --ig-text-dark:       #2C3E50;   /* Títulos sobre fondos claros */
+    --ig-text-on-neon:    #060A10;   /* Texto DENTRO de botones neon (negro) */
+
+    /* ── TIPOGRAFÍA ─────────────────────────────────────────── */
+    --ig-font-heading:    'Montserrat', sans-serif;  /* H1–H4, logo wordmark */
+    --ig-font-body:       'Inter', sans-serif;       /* Body, UI, labels */
+
+    --ig-fw-light:        300;
+    --ig-fw-regular:      400;
+    --ig-fw-medium:       500;
+    --ig-fw-semibold:     600;
+    --ig-fw-bold:         700;
+    --ig-fw-extrabold:    800;
+
+    --ig-ls-heading:      -1px;      /* Letter-spacing títulos */
+    --ig-ls-label:        2px;       /* Letter-spacing labels/tags */
+    --ig-ls-tag:          1.5px;     /* Letter-spacing categorías */
+
+    /* ── RADIOS DE BORDE ────────────────────────────────────── */
+    --ig-radius-sm:       6px;       /* Botones, badges */
+    --ig-radius-md:       8px;       /* Inputs, elementos pequeños */
+    --ig-radius-card:     12px;      /* Cards estándar */
+    --ig-radius-card-lg:  14px;      /* Cards grandes, planes */
+    --ig-radius-pill:     99px;      /* Badges circulares */
+    --ig-radius-icon:     8px;       /* Contenedores de íconos */
+
+    /* ── ESPACIADO ──────────────────────────────────────────── */
+    --ig-space-xs:        4px;
+    --ig-space-sm:        8px;
+    --ig-space-md:        12px;
+    --ig-space-lg:        16px;
+    --ig-space-xl:        24px;
+    --ig-space-2xl:       32px;
+    --ig-space-3xl:       48px;
+    --ig-space-section:   clamp(3rem, 6vw, 5rem);
+
+    /* ── SOMBRAS ────────────────────────────────────────────── */
+    --ig-shadow-card:     0 1px 3px rgba(0,0,0,0.4);
+    --ig-shadow-elevated: 0 4px 16px rgba(0,0,0,0.5);
+
+    /* ── TRANSICIONES ───────────────────────────────────────── */
+    --ig-transition:      all 0.2s ease;
+  }
+
+
+  /* ============================================================
+    SISTEMA DE BOTONES
+    ============================================================ */
+
+  /* Botón CTA primario — sobre fondos oscuros */
+  .btn-ig-primary {
+    background:    var(--ig-accent-neon);
+    color:         var(--ig-text-on-neon);
+    font-family:   var(--ig-font-body);
+    font-weight:   var(--ig-fw-bold);
+    font-size:     14px;
+    padding:       12px 28px;
+    border:        none;
+    border-radius: var(--ig-radius-sm);
+    cursor:        pointer;
+    transition:    var(--ig-transition);
+    letter-spacing: 0.2px;
+  }
+  .btn-ig-primary:hover {
+    background: #00FFBA;
+  }
+
+  /* Botón outline / secundario — sobre fondos oscuros */
+  .btn-ig-outline {
+    background:    transparent;
+    color:         var(--ig-text-primary);
+    font-family:   var(--ig-font-body);
+    font-weight:   var(--ig-fw-regular);
+    font-size:     14px;
+    padding:       12px 28px;
+    border:        0.5px solid var(--ig-border-default);
+    border-radius: var(--ig-radius-sm);
+    cursor:        pointer;
+    transition:    var(--ig-transition);
+  }
+  .btn-ig-outline:hover {
+    border-color: var(--ig-accent-neon);
+    color:        var(--ig-accent-neon);
+  }
+
+  /* Botón CTA — sobre fondos claros */
+  .btn-ig-light {
+    background:    var(--ig-accent-green);
+    color:         var(--ig-bg-white);
+    font-family:   var(--ig-font-body);
+    font-weight:   var(--ig-fw-bold);
+    font-size:     14px;
+    padding:       12px 28px;
+    border:        none;
+    border-radius: var(--ig-radius-sm);
+    cursor:        pointer;
+    transition:    var(--ig-transition);
+  }
+  .btn-ig-light:hover {
+    background: var(--ig-accent-forest);
+  }
+
+  /* Botón ghost — cards de planes */
+  .btn-ig-ghost {
+    background:    transparent;
+    color:         var(--ig-text-primary);
+    font-family:   var(--ig-font-body);
+    font-weight:   var(--ig-fw-semibold);
+    font-size:     13px;
+    padding:       11px;
+    width:         100%;
+    border:        0.5px solid var(--ig-border-default);
+    border-radius: var(--ig-radius-sm);
+    cursor:        pointer;
+    transition:    var(--ig-transition);
+  }
+  .btn-ig-ghost:hover {
+    border-color: var(--ig-accent-neon);
+    color:        var(--ig-accent-neon);
+  }
+
+  /* Botón plan destacado (featured) */
+  .btn-ig-featured {
+    background:    var(--ig-accent-neon);
+    color:         var(--ig-text-on-neon);
+    font-family:   var(--ig-font-body);
+    font-weight:   var(--ig-fw-semibold);
+    font-size:     13px;
+    padding:       11px;
+    width:         100%;
+    border:        none;
+    border-radius: var(--ig-radius-sm);
+    cursor:        pointer;
+    transition:    var(--ig-transition);
+  }
+  .btn-ig-featured:hover {
+    background: #00FFBA;
+  }
+
+
+  /* ============================================================
+    SISTEMA DE CARDS
+    ============================================================ */
+
+  /* Card estándar */
+  .card-ig {
+    background:    var(--ig-bg-panel);
+    border:        0.5px solid var(--ig-border-default);
+    border-radius: var(--ig-radius-card);
+    padding:       1.5rem;
+    transition:    border-color 0.2s ease;
+  }
+  .card-ig:hover {
+    border-color: var(--ig-border-featured);
+  }
+
+  /* Card destacada (plan popular, métrica principal) */
+  .card-ig-featured {
+    background:    var(--ig-bg-panel-mid);
+    border:        1.5px solid var(--ig-accent-neon);
+    border-radius: var(--ig-radius-card-lg);
+    padding:       1.75rem;
+    position:      relative;
+    overflow:      hidden;
+  }
+  .card-ig-featured::before {
+    content:  '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--ig-accent-neon);
+  }
+
+  /* Card con tinte neon (badges, add-ons IA) */
+  .card-ig-neon {
+    background:    var(--ig-bg-neon-tint);
+    border:        0.5px solid var(--ig-border-neon);
+    border-radius: var(--ig-radius-card);
+    padding:       1.25rem;
+  }
+
+  /* Card métrica */
+  .card-ig-metric {
+    background:    var(--ig-bg-panel);
+    border:        0.5px solid var(--ig-border-default);
+    border-radius: var(--ig-radius-card);
+    padding:       1.25rem;
+    position:      relative;
+    overflow:      hidden;
+  }
+  .card-ig-metric::before {
+    content:  '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--ig-accent-neon);
+  }
+  .card-ig-metric.cyan::before {
+    background: var(--ig-accent-cyan);
+  }
+
+
+  /* ============================================================
+    TIPOGRAFÍA BASE
+    ============================================================ */
+
+  .ig-h1, h1 {
+    font-family:    var(--ig-font-heading);
+    font-weight:    var(--ig-fw-extrabold);
+    letter-spacing: var(--ig-ls-heading);
+    color:          var(--ig-text-primary);
+    line-height:    1.08;
+    font-size:      clamp(32px, 4vw, 52px);
+  }
+
+  .ig-h2, h2 {
+    font-family:    var(--ig-font-heading);
+    font-weight:    var(--ig-fw-extrabold);
+    letter-spacing: var(--ig-ls-heading);
+    color:          var(--ig-text-primary);
+    line-height:    1.1;
+    font-size:      clamp(24px, 3vw, 38px);
+  }
+
+  .ig-h3, h3 {
+    font-family:    var(--ig-font-heading);
+    font-weight:    var(--ig-fw-semibold);
+    color:          var(--ig-text-primary);
+    font-size:      15px;
+  }
+
+  .ig-body {
+    font-family: var(--ig-font-body);
+    font-weight: var(--ig-fw-light);
+    color:       var(--ig-text-muted);
+    font-size:   15px;
+    line-height: 1.75;
+  }
+
+  .ig-label {
+    font-family:    var(--ig-font-body);
+    font-weight:    var(--ig-fw-bold);
+    font-size:      10px;
+    letter-spacing: var(--ig-ls-label);
+    text-transform: uppercase;
+    color:          var(--ig-accent-neon);
+  }
+
+  .ig-caption {
+    font-family: var(--ig-font-body);
+    font-weight: var(--ig-fw-light);
+    font-size:   11px;
+    color:       var(--ig-text-dim);
+  }
+
+  /* Acento neon en texto */
+  .ig-neon  { color: var(--ig-accent-neon);   }
+  .ig-cyan  { color: var(--ig-accent-cyan);   }
+  .ig-amber { color: var(--ig-accent-amber);  }
+  .ig-muted { color: var(--ig-text-muted);    }
+  .ig-dim   { color: var(--ig-text-dim);      }
+
+
+  /* ============================================================
+    LOGO WORDMARK — clases utilitarias
+    ============================================================ */
+
+  .ig-wordmark {
+    font-family:    var(--ig-font-heading);
+    font-size:      20px;
+    letter-spacing: -0.5px;
+  }
+  .ig-wordmark .itera { font-weight: var(--ig-fw-regular); color: var(--ig-text-primary); }
+  .ig-wordmark .grow  { font-weight: var(--ig-fw-extrabold); color: var(--ig-accent-neon); }
+
+  /* Sobre fondos claros */
+  .ig-wordmark.light .itera { color: var(--ig-text-dark); }
+  .ig-wordmark.light .grow  { color: var(--ig-accent-green); }
+
+
+  /* ============================================================
+    BADGES Y TAGS DE CATEGORÍA
+    ============================================================ */
+
+  .tag-ig {
+    display:        inline-flex;
+    align-items:    center;
+    font-family:    var(--ig-font-body);
+    font-weight:    var(--ig-fw-bold);
+    font-size:      9px;
+    letter-spacing: var(--ig-ls-tag);
+    text-transform: uppercase;
+    padding:        3px 10px;
+    border-radius:  var(--ig-radius-pill);
+  }
+
+  /* Neon — IA y Automatización */
+  .tag-ig.neon {
+    background:   var(--ig-bg-neon-tint);
+    border:       0.5px solid var(--ig-border-neon);
+    color:        var(--ig-accent-neon);
+  }
+
+  /* Cyan — Data & BI */
+  .tag-ig.cyan {
+    background:   rgba(10, 191, 184, 0.08);
+    border:       0.5px solid rgba(10, 191, 184, 0.35);
+    color:        var(--ig-accent-cyan);
+  }
+
+  /* Amber — CRO */
+  .tag-ig.amber {
+    background:   rgba(255, 184, 48, 0.08);
+    border:       0.5px solid rgba(255, 184, 48, 0.35);
+    color:        var(--ig-accent-amber);
+  }

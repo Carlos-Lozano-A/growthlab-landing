@@ -58,7 +58,7 @@ const FinalCTA = () => {
 
                 <div className="final-cta-features">
                 <div className="cta-feature">✓ Sin contratos de permanencia</div>
-                <div className="cta-feature">✓ Resultados en 30 días o garantía de devolución</div>
+                {/*<div className="cta-feature">✓ Resultados en 30 días o garantía de devolución</div>*/}
                 <div className="cta-feature">✓ Asesoría gratuita inicial</div>
                 </div>
 

@@ -1,0 +1,21 @@
+{
+  "itera_grow_landing": {
+    "current_version": 2,
+    "history": [
+      {
+        "version": 1,
+        "date": "2026-04-04",
+        "hash": "d3e83ea9a76fbc2637b2c109612744af",
+        "tokens": 87,
+        "comment": "Inicial"
+      },
+      {
+        "version": 2,
+        "date": "2026-04-04",
+        "hash": "db13c81d7abc092398f5d0ccea749d9a",
+        "tokens": 7714,
+        "comment": "Inicial"
+      }
+    ]
+  }
+}
