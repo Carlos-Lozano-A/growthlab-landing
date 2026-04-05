@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
             <div className="section-header">
             <h2 className="section-title">Lo que dicen nuestros clientes</h2>
             <p className="section-subtitle">
-                Resultados reales de empresas que confiaron en GrowthLab
+                Resultados reales de empresas que confiaron en IteraGrow
             </p>
             </div>
 

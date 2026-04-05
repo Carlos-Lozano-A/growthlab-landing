@@ -1,0 +1,144 @@
+{
+  "src\\components\\AddOnsSection.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react",
+      "../data/mock"
+    ],
+    "functions": [
+      "formatPrice",
+      "handleWhatsAppClick",
+      "AddOnsSection"
+    ],
+    "classes": []
+  },
+  "src\\components\\FinalCTA.jsx": {
+    "imports": [
+      "React",
+      "./useWhatsApp.jsx",
+      "react",
+      "lucide-react",
+      "sonner",
+      "../data/mock"
+    ],
+    "functions": [
+      "handleChange",
+      "handleWhatsAppClick",
+      "FinalCTA"
+    ],
+    "classes": []
+  },
+  "src\\components\\Footer.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react",
+      "./config.jsx"
+    ],
+    "functions": [
+      "Footer"
+    ],
+    "classes": []
+  },
+  "src\\components\\HeroSection.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react",
+      "../data/mock"
+    ],
+    "functions": [
+      "handleWhatsAppClick",
+      "scrollToPlans",
+      "HeroSection"
+    ],
+    "classes": []
+  },
+  "src\\components\\PricingSection.jsx": {
+    "imports": [
+      "React",
+      "./useWhatsApp.jsx",
+      "react",
+      "lucide-react",
+      "../data/mock"
+    ],
+    "functions": [
+      "formatPrice",
+      "handleWhatsAppClick",
+      "PricingSection"
+    ],
+    "classes": []
+  },
+  "src\\components\\ProblemSection.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react",
+      "../data/mock"
+    ],
+    "functions": [
+      "ProblemSection"
+    ],
+    "classes": []
+  },
+  "src\\components\\SolutionSection.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react",
+      "../data/mock"
+    ],
+    "functions": [
+      "SolutionSection"
+    ],
+    "classes": []
+  },
+  "src\\components\\TestimonialsSection.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react",
+      "../data/mock"
+    ],
+    "functions": [
+      "TestimonialsSection"
+    ],
+    "classes": []
+  },
+  "src\\components\\WhatsAppFloat.jsx": {
+    "imports": [
+      "lucide-react",
+      "React",
+      "react"
+    ],
+    "functions": [
+      "WhatsAppFloat"
+    ],
+    "classes": []
+  },
+  "src\\components\\config.jsx": {
+    "imports": [],
+    "functions": [],
+    "classes": []
+  },
+  "src\\components\\useWhatsApp.jsx": {
+    "imports": [
+      "./config.jsx"
+    ],
+    "functions": [
+      "useWhatsApp",
+      "openWhatsApp"
+    ],
+    "classes": []
+  },
+  "src\\components\\ui\\sonner.jsx": {
+    "imports": [
+      "sonner"
+    ],
+    "functions": [
+      "Toaster"
+    ],
+    "classes": []
+  }
+}

@@ -1,0 +1,42 @@
+===== CONTEXTO v1 =====
+
+CONTEXT_ID: itera_grow_landing_v1_2026_04_04
+STATUS: ACTIVE
+SUPERSEDES: NONE
+
+IMPORTANTE:
+- Este contexto reemplaza cualquier versión anterior
+- Ignorar completamente cualquier contexto previo
+- Usar SOLO este contexto como fuente de verdad
+
+# CODEBASE CONTEXT EXPORT
+
+## REPOSITORY STRUCTURE
+
+.
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── public
+│   ├── src
+│   │   ├── App.css
+│   │   ├── iteragrow-tokens.css
+│   │   ├── components
+│   │   │   ├── ui
+│   │   ├── data
+│   │   │   ├── mock.js
+│   │   ├── pages
+
+## EXPORTED FILE INDEX
+
+
+
+## MODULE DEPENDENCIES
+
+
+
+## FILE CONTENTS
+
+
+## TOKEN ESTIMATE
+
+Approx tokens: 87

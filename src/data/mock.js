@@ -1,4 +1,4 @@
-// Mock data for GrowthLab landing page
+// Mock data for IteraGrow landing page
 
 export const testimonials = [
     {
@@ -7,7 +7,7 @@ export const testimonials = [
         business: "TechStore Colombia",
         role: "Fundador",
         image: "https://images.unsplash.com/photo-1642257834579-eee89ff3e9fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxzdWNjZXNzZnVsJTIwYnVzaW5lc3MlMjBvd25lcnxlbnwwfHx8fDE3NzQzODEzMzB8MA&ixlib=rb-4.1.0&q=85",
-        testimonial: "Después de 3 meses con GrowthLab, nuestras ventas aumentaron un 320%. Finalmente tenemos un flujo constante de clientes calificados.",
+        testimonial: "Después de 3 meses con IteraGrow, nuestras ventas aumentaron un 320%. Finalmente tenemos un flujo constante de clientes calificados.",
         result: "+320% en ventas"
     },
     {
@@ -16,7 +16,7 @@ export const testimonials = [
         business: "Moda Bella Boutique",
         role: "Dueña",
         image: "https://images.pexels.com/photos/10375901/pexels-photo-10375901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        testimonial: "Invertía en publicidad sin resultados. GrowthLab optimizó mi inversión y ahora cada peso que invierto me genera retorno real.",
+        testimonial: "Invertía en publicidad sin resultados. IteraGrow optimizó mi inversión y ahora cada peso que invierto me genera retorno real.",
         result: "ROI de 4.5x"
     },
     {
@@ -25,7 +25,7 @@ export const testimonials = [
         business: "BeautyLab Spa",
         role: "Gerente General",
         image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzQzMDU3NjR8MA&ixlib=rb-4.1.0&q=85",
-        testimonial: "El equipo de GrowthLab no solo manejó nuestras campañas, sino que nos enseñó a entender nuestros números. Ahora tengo control total.",
+        testimonial: "El equipo de IteraGrow no solo manejó nuestras campañas, sino que nos enseñó a entender nuestros números. Ahora tengo control total.",
         result: "+150 leads/mes"
     }
     ];
@@ -41,7 +41,7 @@ export const testimonials = [
         description: "Perfecto para comenzar tu crecimiento digital",
         popular: false,
         features: [
-        "1 plataforma (TikTok, Instagram o Google)",
+        "1 plataforma (TikTok, Meta ads o Google)",
         "Gestión completa de campañas",
         "Segmentación de audiencia",
         "Reporte mensual de rendimiento",
@@ -118,8 +118,8 @@ export const testimonials = [
     ];
 
     export const trustMetrics = [
-    { value: "320%", label: "Aumento promedio en ventas" },
-    { value: "150+", label: "Empresas impulsadas" },
+    { value: "50%", label: "Aumento promedio en ventas" },
+    { value: "30+", label: "Empresas impulsadas" },
     { value: "4.8/5", label: "Calificación de clientes" },
     { value: "24/7", label: "Monitoreo de campañas" }
     ];
@@ -133,7 +133,7 @@ export const testimonials = [
     {
         icon: "DollarSign",
         title: "Inviertes en publicidad y no vendes",
-        description: "Gastas dinero en ads de Facebook, Instagram o Google pero el retorno es nulo o muy bajo."
+        description: "Gastas dinero en ads de TikTok, Meta ads o Google ads pero el retorno es nulo o muy bajo."
     },
     {
         icon: "AlertCircle",
@@ -151,7 +151,7 @@ export const testimonials = [
     {
         icon: "Layers",
         title: "Estrategia multiplataforma",
-        description: "TikTok, Instagram y Google Ads trabajando juntos para maximizar tu alcance y ventas."
+        description: "TikTok, Meta ads y Google Ads trabajando juntos para maximizar tu alcance y ventas."
     },
     {
         icon: "Zap",

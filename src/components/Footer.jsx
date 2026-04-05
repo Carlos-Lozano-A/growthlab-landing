@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footer-grid">
             {/* Brand Column */}
             <div className="footer-column">
-                <h3 className="footer-logo">Growth<span className="brand-accent">Lab</span></h3>
+                <h3 className="footer-logo">Itera<span className="brand-accent">Grow</span></h3>
                 <p className="footer-description">
                 Ayudamos a empresas locales a escalar sus ventas con estrategias digitales probadas y basadas en datos.
                 </p>
@@ -73,7 +73,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
             <p className="footer-copyright">
-                &copy; {new Date().getFullYear()} GrowthLab. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} IteraGrow. Todos los derechos reservados.
             </p>
             <div className="footer-legal">
                 <a href="#">Términos</a>

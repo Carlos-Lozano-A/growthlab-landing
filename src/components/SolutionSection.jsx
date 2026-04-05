@@ -15,7 +15,7 @@ const iconMap = {
         <div className="container">
             <div className="section-header">
             <h2 className="section-title">
-                Cómo <span className="highlight-text">GrowthLab</span> resuelve tus problemas
+                Cómo <span className="highlight-text">IteraGrow</span> resuelve tus problemas
             </h2>
             <p className="section-subtitle">
                 Nuestra metodología probada para convertir tu inversión en resultados medibles

@@ -4,7 +4,7 @@ import { trustMetrics } from '../data/mock';
 
 const HeroSection = () => {
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/573154041487?text=Hola%2C%20quiero%20más%20información%20sobre%20GrowthLab', '_blank');
+        window.open('https://wa.me/573154041487?text=Hola%2C%20quiero%20más%20información%20sobre%20IteraGrow', '_blank');
     };
 
     const scrollToPlans = () => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="container">
             {/* Logo/Brand */}
             <div className="hero-brand animate-fade-in">
-            <h1 className="brand-logo">Growth<span className="brand-accent">Lab</span></h1>
+            <h1 className="brand-logo">Itera<span className="brand-accent">Grow</span></h1>
             </div>
 
             {/* Main Content */}
@@ -31,7 +31,7 @@ const HeroSection = () => {
                 </h1>
                 <p className="hero-subheadline">
                 Ayudamos a empresas locales a aumentar sus ventas usando publicidad basada en datos 
-                en TikTok, Instagram y Google Ads. Creación de campañas, segmentación de audiencia, 
+                en TikTok, Meta ads y Google Ads. Creación de campañas, segmentación de audiencia, 
                 análisis de rendimiento y optimización continua.
                 </p>
 

@@ -7,7 +7,7 @@ const PricingSection = () => {
     const { openWhatsApp } = useWhatsApp();
 
     const handleWhatsAppClick = (planName) => {
-        const message = `Hola, me interesa el plan ${planName} de GrowthLab. ¿Podrían darme más información?`;
+        const message = `Hola, me interesa el plan ${planName} de IteraGrow. ¿Podrían darme más información?`;
         openWhatsApp(message);
     };
     const formatPrice = (price) => new Intl.NumberFormat('es-CO').format(price);
@@ -65,16 +65,17 @@ const PricingSection = () => {
             ))}
             </div>
 
-            {/* Guarantee */}
+            {/*
             <div className="pricing-guarantee">
-            <div className="guarantee-content">
-                <h4 className="guarantee-title">Garantía de resultados</h4>
-                <p className="guarantee-text">
-                Si en los primeros 30 días no ves mejoras medibles en tus métricas clave, 
-                trabajaremos gratis hasta que veas resultados o te devolvemos tu dinero.
-                </p>
+                <div className="guarantee-content">
+                    <h4 className="guarantee-title">Garantía de resultados</h4>
+                    <p className="guarantee-text">
+                    Si en los primeros 30 días no ves mejoras medibles en tus métricas clave,
+                    trabajaremos gratis hasta que veas resultados o te devolvemos tu dinero.
+                    </p>
+                </div>
             </div>
-            </div>
+            */}
         </div>
         </section>
     );
