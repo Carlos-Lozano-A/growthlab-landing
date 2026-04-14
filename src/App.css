@@ -86,7 +86,26 @@
     }
 
     .highlight-text {
-    color: var(--ig-accent-neon);
+    /* 1. degradado de color (Verde a Cian) */
+    background: linear-gradient(90deg, #37ff8b 0%, #15d1f3 100%);
+    
+    /* 2. fondo para que solo rellene las letras */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* 3. texto transparente para que brille el fondo */
+    color: transparent;
+
+/* 4. Estilos visuales mejorados */
+    font-weight: 900;           /* Máximo grosor para que luzca el color */
+    
+    /* Tamaño responsivo: Mínimo 3.5rem, ideal 8vw, máximo 6rem */
+    font-size: clamp(3.5rem, 8vw, 6rem); 
+    
+    line-height: 0.9;           /* Pegamos las líneas para que se vea compacto */
+    letter-spacing: -0.04em;    /* Un poco más juntas, estilo diseño moderno */
+    display: inline-block;
+    padding-right: 0.1em;       /* Pequeño espacio para que no se corte la última letra */
     }
 
     /* ================================

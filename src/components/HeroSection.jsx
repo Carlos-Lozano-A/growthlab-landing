@@ -26,13 +26,13 @@ const HeroSection = () => {
             <div className="hero-content">
             <div className="hero-text animate-fade-in">
                 <h1 className="hero-headline">
-                Convierte tu inversión publicitaria en 
-                <span className="highlight-text"> ventas reales</span>
+                Convierte tu inversión en 
+                <span className="highlight-text"> resultados reales </span>
                 </h1>
                 <p className="hero-subheadline">
-                Ayudamos a empresas locales a aumentar sus ventas usando publicidad basada en datos 
+                Ayudamos a empresas a aumentar sus ventas usando publicidad basada en datos 
                 en TikTok, Meta ads y Google Ads. Creación de campañas, segmentación de audiencia, 
-                análisis de rendimiento y optimización continua.
+                análisis de rendimiento y optimización.
                 </p>
 
                 {/* CTA Buttons */}
