@@ -253,14 +253,16 @@
     min-height: 100vh;
     padding: var(--ig-space-section) 0;
     position: relative;
-    display: flex;
-    align-items: center;
-    }
+    display: block; /* Cambiado de flex para permitir el flujo vertical del video y contenido */
+    padding: 0;        /* elimina cualquier padding de la sección */
+    overflow-x: hidden;
+}
 
     .hero-brand {
     text-align: center;
     margin-bottom: var(--ig-space-3xl);
     }
+
 
     .brand-logo {
     font-family: var(--ig-font-heading);
@@ -275,7 +277,7 @@
 
     .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--ig-space-section);
     align-items: center;
     }
@@ -1250,6 +1252,10 @@
         justify-content: center;
     }
 
+    .hero-video-wrapper {
+        height: 300px; /* Altura reducida para tablets y móviles */
+    }
+
     /* Ajuste de dimensión de cards para evitar desbordamiento */
     .pricing-card, 
     .testimonial-card, 
@@ -1294,6 +1300,65 @@
     }
     }
 
+    .hero-video-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 420px;
+    overflow: hidden;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #000;
+    }
+
+    .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+    .hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+    );
+    }
+
+    .hero-video-brand {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    padding: 0 1rem;
+    }
+
+    .hero-video-tagline,
+    .hero-video-platforms {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 0;
+    }
+
+    .brand-logo-video {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin: 0;
+    line-height: 1;
+    }
+
     @media (max-width: 480px) {
     .container {
         padding: 0 var(--ig-space-lg);
@@ -1314,6 +1379,11 @@
     .trust-metrics {
         grid-template-columns: 1fr;
     }
+
+    .hero-video-wrapper {
+        height: 250px; /* Altura aún más compacta para teléfonos pequeños */
+    }
+
     .social-proof {
         grid-template-columns: 1fr;
     }

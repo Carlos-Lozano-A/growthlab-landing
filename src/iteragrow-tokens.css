@@ -386,3 +386,58 @@
   }
 
 
+/* Video Hero */
+.hero-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 420px;          /* ajusta según prefieras */
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
+
+.hero-video-brand {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-video-tagline,
+.hero-video-platforms {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.brand-logo-video {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1;
+}
