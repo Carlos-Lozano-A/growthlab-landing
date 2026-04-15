@@ -16,19 +16,34 @@ const HeroSection = () => {
 
     return (
         <section className="hero-section">
-        <div className="container">
-            {/* Logo/Brand */}
-            <div className="hero-brand animate-fade-in">
-            <h1 className="brand-logo">Itera<span className="brand-accent">Grow</span></h1>
+            <div className="hero-video-wrapper">
+                <video
+                    className="hero-video"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/assets/video/hero-bg.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-video-overlay" />
+                <div className="hero-video-brand animate-fade-in">
+                    <p className="hero-video-tagline">Agencia de crecimiento digital</p>
+                    <h1 className="brand-logo-video">
+                        Itera<span className="brand-accent">Grow</span>
+                    </h1>
+                    <p className="hero-video-platforms">Meta · Google · TikTok Ads</p>
+                </div>
             </div>
 
+        <div className="container">
             {/* Main Content */}
             <div className="hero-content">
             <div className="hero-text animate-fade-in">
-                <h1 className="hero-headline">
+                <h2 className="hero-headline">
                 Convierte tu inversión en 
                 <span className="highlight-text"> resultados reales </span>
-                </h1>
+                </h2>
                 <p className="hero-subheadline">
                 Ayudamos a empresas a aumentar sus ventas usando publicidad basada en datos 
                 en TikTok, Meta ads y Google Ads. Solo lo que mueve tu negocio.
@@ -57,17 +72,6 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            {/* Hero Image */}
-            <div className="hero-image animate-fade-in">
-                <div className="hero-image-wrapper">
-                <img 
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc3NDM4MTI3OHww&ixlib=rb-4.1.0&q=85" 
-                    alt="Data Analytics Dashboard"
-                    className="hero-img"
-                />
-                <div className="hero-image-overlay"></div>
-                </div>
-            </div>
             </div>
 
             {/* Social Proof Badges */}
