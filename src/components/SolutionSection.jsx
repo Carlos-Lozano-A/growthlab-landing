@@ -40,11 +40,11 @@ const iconMap = {
             {/* Value Proposition Highlight */}
             <div className="value-proposition">
             <div className="value-content">
-                <h3 className="value-title">Tu socio de crecimiento basado en datos</h3>
+                <h3 className="value-title">Tu partner de crecimiento basado en datos</h3>
                 <p className="value-text">
-                No somos solo otra agencia de marketing. Somos tu equipo de crecimiento dedicado, 
+                No somos uno más. Somos tu equipo de crecimiento dedicado, 
                 enfocado en un solo objetivo: aumentar tus ventas de manera consistente y predecible 
-                usando tecnología, datos y optimización continua.
+                usando inteligencia artificial, datos y optimización continua.
                 </p>
             </div>
             <div className="value-image">

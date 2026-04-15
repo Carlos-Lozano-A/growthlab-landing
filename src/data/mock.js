@@ -42,10 +42,11 @@ export const testimonials = [
         popular: false,
         features: [
         "1 plataforma (TikTok, Meta ads o Google)",
-        "Gestión completa de campañas",
+        "Diagnostico inicial y estrategia personalizada",
         "Segmentación de audiencia",
+        "Gestión completa de campañas",
         "Reporte mensual de rendimiento",
-        "Optimización semanal"
+        "Soporte por email"
         ]
     },
     {
@@ -92,27 +93,25 @@ export const testimonials = [
         category: "IA & Automatización",
         icon: "Bot",
         services: [
-        { name: "Chatbot con IA", price: 250000 },
-        { name: "Automatización de respuestas", price: 180000 },
-        { name: "Flujos de WhatsApp automatizados", price: 200000 }
+        { name: "Agente de atención con IA" },
+        { name: "Automatización de respuestas" },
+        { name: "Flujos de WhatsApp automatizados" }
         ]
     },
     {
         category: "Data & BI",
         icon: "BarChart3",
         services: [
-        { name: "Dashboard personalizado", price: 300000 },
-        { name: "Forecasting predictivo", price: 350000 },
-        { name: "Análisis de comportamiento", price: 220000 }
+        { name: "Dashboard personalizado" },
+        { name: "Forecasting predictivo" }
         ]
     },
     {
         category: "CRO & Optimización",
         icon: "TrendingUp",
         services: [
-        { name: "Auditoría de conversión", price: 400000 },
-        { name: "A/B Testing avanzado", price: 280000 },
-        { name: "Optimización de landing", price: 320000 }
+        { name: "Auditoría de conversión" },
+        { name: "Optimización de landing" }
         ]
     }
     ];
@@ -127,8 +126,8 @@ export const testimonials = [
     export const problems = [
     {
         icon: "UserX",
-        title: "No consigues clientes",
-        description: "Tu negocio tiene potencial pero los clientes no llegan. El tráfico no se convierte en ventas reales."
+        title: "No consigues clientes o no comprendes cómo funciona la publicidad digital",
+        description: "Tu negocio tiene potencial pero los clientes no llegan o no sabes como funciona la publicidad digital."
     },
     {
         icon: "DollarSign",
@@ -139,6 +138,21 @@ export const testimonials = [
         icon: "AlertCircle",
         title: "No tienes control de tus procesos",
         description: "No sabes qué funciona, qué no, ni cómo optimizar. Falta visibilidad y datos claros."
+    },
+    {
+        icon: "AutomationAgent",
+        title: "Haces tareas una y otra vez sin automatizar",
+        description: "Actividades manuales y repetitivas que te consumen tiempo."
+    },
+    {
+        icon: "Lightbulb",
+        title: "No sabes leer metricas o no tienes una estrategia digital clara",
+        description: "Te sientes perdido en el mundo digital, sin un plan definido para alcanzar tus objetivos."
+    },
+    {
+        icon: "Heart",
+        title: "Tus clientes no regresan o no los fidelizas",
+        description: "Inviertes mucho en conseguir nuevos clientes, pero te cuesta mantenerlos a largo plazo."
     }
     ];
 

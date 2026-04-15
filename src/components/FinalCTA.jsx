@@ -49,7 +49,7 @@ const FinalCTA = () => {
             <div className="final-cta-content">
             <div className="final-cta-text">
                 <h2 className="final-cta-title">
-                Empieza a convertir tu inversión en <span className="highlight-text">ventas reales</span>
+                Empieza a convertir tu inversión en ventas reales hoy mismo.
                 </h2>
                 <p className="final-cta-subtitle">
                 No sigas perdiendo dinero en publicidad que no funciona. Deja que nuestro equipo 

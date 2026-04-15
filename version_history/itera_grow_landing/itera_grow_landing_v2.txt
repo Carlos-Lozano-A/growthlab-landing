@@ -667,7 +667,7 @@ export default PricingSection;
 # FILE: src\components\ProblemSection.jsx
 
 import React from 'react';
-import { UserX, DollarSign, AlertCircle } from 'lucide-react';
+import { UserX, DollarSign, AlertCircle, } from 'lucide-react';
 import { problems } from '../data/mock';
 
 const iconMap = {

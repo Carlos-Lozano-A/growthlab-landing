@@ -41,7 +41,7 @@ const iconMap = {
                         <div key={sIndex} className="addon-service-item">
                         <div className="service-info">
                             <span className="service-name">{service.name}</span>
-                            <span className="service-price">${formatPrice(service.price)} COP</span>
+                            {/*<span className="service-price">${formatPrice(service.price)} COP</span>*/}
                         </div>
                         <button 
                             className="btn-ghost btn-sm"

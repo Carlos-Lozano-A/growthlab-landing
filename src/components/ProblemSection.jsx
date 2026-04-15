@@ -1,11 +1,14 @@
 import React from 'react';
-import { UserX, DollarSign, AlertCircle } from 'lucide-react';
+import { UserX, DollarSign, AlertCircle, Bot, Lightbulb, Heart } from 'lucide-react';
 import { problems } from '../data/mock';
 
 const iconMap = {
     UserX,
     DollarSign,
-    AlertCircle
+    AlertCircle,
+    AutomationAgent: Bot,
+    Lightbulb,
+    Heart,
 };
 
 const ProblemSection = () => {

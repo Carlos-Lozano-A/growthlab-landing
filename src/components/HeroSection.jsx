@@ -31,8 +31,7 @@ const HeroSection = () => {
                 </h1>
                 <p className="hero-subheadline">
                 Ayudamos a empresas a aumentar sus ventas usando publicidad basada en datos 
-                en TikTok, Meta ads y Google Ads. Creación de campañas, segmentación de audiencia, 
-                análisis de rendimiento y optimización.
+                en TikTok, Meta ads y Google Ads. Solo lo que mueve tu negocio.
                 </p>
 
                 {/* CTA Buttons */}
@@ -83,7 +82,7 @@ const HeroSection = () => {
             </div>
             <div className="proof-badge">
                 <Award className="proof-icon" size={20} />
-                <span>Certificados Google & Meta</span>
+                <span>Procesos automatizados con IA</span>
             </div>
             <div className="proof-badge">
                 <Clock className="proof-icon" size={20} />
